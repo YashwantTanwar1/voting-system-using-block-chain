@@ -87,8 +87,8 @@ def get_parties(request):
     if request.session['email-verified']:
 
         private_key, public_key = generate_keys()
-
-        # send_email_private_key(request.session['email-id'], private_key)
+        
+        send_email_private_key(request.session['email-id'], private_key)
         print(private_key)
 
         request.session['public-key'] = public_key

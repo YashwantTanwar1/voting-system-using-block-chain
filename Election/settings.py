@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -120,10 +122,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-EMAIL_ADDRESS = ''
-EMAIL_PASSWORD = ''
+EMAIL_ADDRESS = 'yashwanttanwar1503@gmail.com'
+EMAIL_PASSWORD = 'lnvj acrv guvg adgm'
 TRANSACTIONS_PER_BLOCK = 1
 
 # PUZZLE
 PUZZLE = '000'
 PLENGTH = len(PUZZLE)
+DFAULT_AUTO_FIELDE = 'django.db.models.BigAutoField'
