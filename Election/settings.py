@@ -10,7 +10,19 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
+
 import os
+from pathlib import Path
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Static files settings
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Optionally, you can also include:
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+
 
 
 
@@ -130,3 +142,5 @@ TRANSACTIONS_PER_BLOCK = 1
 PUZZLE = '000'
 PLENGTH = len(PUZZLE)
 DFAULT_AUTO_FIELDE = 'django.db.models.BigAutoField'
+
+
